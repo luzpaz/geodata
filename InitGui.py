@@ -40,19 +40,19 @@ windowCreated = 0
 #print "geodat loaded"
 
 
-# kann weg 
+# kann weg
 #class import_osm:
 #
 #	def Activated(self):
-#		print "run import ..."
+#		print("run import ...")
 #		import geodat.import_osm
 #		geodat.import_osm.import_osm()
-#		
+#
 #
 #	def GetResources(self):
 #		return {
-#			'Pixmap'  : 'Std_Tool2', 
-#			'MenuText': 'Import OSM Map', 
+#			'Pixmap'  : 'Std_Tool2',
+#			'MenuText': 'Import OSM Map',
 #			'ToolTip': 'Import OSM Map'
 #		}
 
@@ -105,22 +105,22 @@ FreeCADGui.addCommand('My_Test Geodat'        ,MyTestCmd2())
 class import_csv:
 
 	def Activated(self):
-		print "run import ..."
+		print("run import ...")
 		import geodat.import_csv
 		geodat.import_csv.mydialog()
 
 
 	def GetResources(self):
 		return {
-			'Pixmap'  : 'Std_Tool3', 
-			'MenuText': 'Import CSV ', 
+			'Pixmap'  : 'Std_Tool3',
+			'MenuText': 'Import CSV ',
 			'ToolTip': 'Import CSV'
 		}
 
 class import_emir:
 
 	def Activated(self):
-		print "run import ..."
+		print("run import ...")
 		import geodat.import_emir
 		reload(geodat.import_emir)
 		geodat.import_emir.mydialog()
@@ -128,8 +128,8 @@ class import_emir:
 
 	def GetResources(self):
 		return {
-			'Pixmap'  : 'Std_Tool3', 
-			'MenuText': 'Import EMIR ', 
+			'Pixmap'  : 'Std_Tool3',
+			'MenuText': 'Import EMIR ',
 			'ToolTip': 'Import EMIR'
 		}
 
@@ -137,32 +137,32 @@ class import_emir:
 class import_xyz:
 
 	def Activated(self):
-		print "run import ..."
+		print("run import ...")
 		import geodat.import_xyz
 		reload(geodat.import_xyz)
 		geodat.import_xyz.mydialog(False)
-		
+
 
 	def GetResources(self):
 		return {
-			'Pixmap'  : 'Std_Tool3', 
-			'MenuText': 'Import XYZ ', 
+			'Pixmap'  : 'Std_Tool3',
+			'MenuText': 'Import XYZ ',
 			'ToolTip': 'Import XYZ'
 		}
 
 class import_image:
 
 	def Activated(self):
-		print "run import ..."
+		print("run import ...")
 		import geodat.import_image
 		reload(geodat.import_image)
 		geodat.import_image.mydialog(False)
-		
+
 
 	def GetResources(self):
 		return {
-			'Pixmap'  : 'Std_Tool3', 
-			'MenuText': 'Import Image ', 
+			'Pixmap'  : 'Std_Tool3',
+			'MenuText': 'Import Image ',
 			'ToolTip': 'Import Image'
 		}
 
@@ -170,22 +170,22 @@ class import_image:
 class import_gpx:
 
 	def Activated(self):
-		print "run import ..."
+		print("run import ...")
 		import geodat.import_gpx
 		geodat.import_gpx.mydialog()
-		
+
 
 	def GetResources(self):
 		return {
-			'Pixmap'  : 'Std_Tool3', 
-			'MenuText': 'Import GPX ', 
+			'Pixmap'  : 'Std_Tool3',
+			'MenuText': 'Import GPX ',
 			'ToolTip': 'Import GPX'
 		}
 
 class import_latlony:
 
 	def Activated(self):
-		print "run import ..."
+		print("run import ...")
 		import geodat.import_latlony
 		reload(geodat.import_latlony)
 		geodat.import_latlony.mydialog()
@@ -194,8 +194,8 @@ class import_latlony:
 
 	def GetResources(self):
 		return {
-			'Pixmap'  : 'Std_Tool3', 
-			'MenuText': 'Import Lat Lon Height ', 
+			'Pixmap'  : 'Std_Tool3',
+			'MenuText': 'Import Lat Lon Height ',
 			'ToolTip': 'Import LatLonH'
 		}
 
@@ -203,16 +203,16 @@ class import_latlony:
 class import_aster:
 
 	def Activated(self):
-		print "run import ..."
+		print("run import ...")
 		import geodat.import_aster
 		reload(geodat.import_aster)
 		geodat.import_aster.mydialog()
-		
+
 
 	def GetResources(self):
 		return {
-			'Pixmap'  : 'Std_Tool3', 
-			'MenuText': 'Import ASTER ', 
+			'Pixmap'  : 'Std_Tool3',
+			'MenuText': 'Import ASTER ',
 			'ToolTip': 'Import ASTER'
 		}
 
@@ -220,16 +220,16 @@ class import_aster:
 class import_lidar:
 
 	def Activated(self):
-		print "run import ..."
+		print("run import ...")
 		import geodat.import_lidar
 		reload(geodat.import_lidar)
 		geodat.import_lidar.mydialog()
-		
+
 
 	def GetResources(self):
 		return {
-#			'Pixmap'  : 'Std_Tool3', 
-			'MenuText': 'Import LIDAR ', 
+#			'Pixmap'  : 'Std_Tool3',
+			'MenuText': 'Import LIDAR ',
 			'ToolTip': 'Import LIDAR'
 		}
 
@@ -238,17 +238,17 @@ class import_lidar:
 class navigator:
 
 	def Activated(self):
-		print "run import ..."
+		print("run import ...")
 		import geodat.navigator
 		FreeCADGui.activeDocument().activeView().setCameraType("Perspective")
-		FreeCADGui.updateGui() 
+		FreeCADGui.updateGui()
 		geodat.navigator.navi()
 
 
 	def GetResources(self):
 		return {
-			'Pixmap'  : 'Std_Tool2', 
-			'MenuText': 'Navigator', 
+			'Pixmap'  : 'Std_Tool2',
+			'MenuText': 'Navigator',
 			'ToolTip': 'Navigator'
 		}
 
@@ -256,7 +256,7 @@ class navigator:
 class mydialog:
 
 	def Activated(self):
-		print "run import ..."
+		print("run import ...")
 #		import geodat.mydialog
 #		reload(geodat.mydialog)
 #		geodat.mydialog.mydialog()
@@ -266,7 +266,7 @@ class mydialog:
 
 	# logger version for paulee
 	def XXXActivated(self):
-		print "run import ..."
+		print("run import ...")
 		import geodat.import_osm_logger
 		reload(geodat.import_osm_logger)
 		geodat.import_osm_logger.mydialog()
@@ -275,8 +275,8 @@ class mydialog:
 
 	def GetResources(self):
 		return {
-			'Pixmap'  : 'Std_Tool1', 
-			'MenuText': 'Import OSM Map', 
+			'Pixmap'  : 'Std_Tool1',
+			'MenuText': 'Import OSM Map',
 			'ToolTip': 'Import OSM Map'
 		}
 
@@ -284,32 +284,32 @@ class mydialog:
 class importheights:
 
 	def Activated(self):
-		print "run import ..."
+		print("run import ...")
 		import geodat.import_heights
 		reload(geodat.import_heights)
 		geodat.import_heights.mydialog()
-		
+
 
 	def GetResources(self):
 		return {
-			'Pixmap'  : 'Std_Tool1', 
-			'MenuText': 'Import OSM Heights', 
+			'Pixmap'  : 'Std_Tool1',
+			'MenuText': 'Import OSM Heights',
 			'ToolTip': 'Import OSM Heights'
 		}
 
 class importsrtm:
 
 	def Activated(self):
-		print "run import ..."
+		print("run import ...")
 		import geodat.import_srtm
 		reload(geodat.import_srtm)
 		geodat.import_srtm.mydialog()
-		
+
 
 	def GetResources(self):
 		return {
-			'Pixmap'  : 'Std_Tool1', 
-			'MenuText': 'Import SRTM Heights', 
+			'Pixmap'  : 'Std_Tool1',
+			'MenuText': 'Import SRTM Heights',
 			'ToolTip': 'Import SRTM Heights'
 		}
 
@@ -317,16 +317,16 @@ class importsrtm:
 class createHouse:
 
 	def Activated(self):
-		print "run import ..."
+		print("run import ...")
 		import geodat.createhouse
 		reload(geodat.createhouse)
 		FreeCAD.rc=geodat.createhouse.mydialog()
-		
+
 
 	def GetResources(self):
 		return {
-			'Pixmap'  : 'Std_Tool1', 
-			'MenuText': 'Create Houses', 
+			'Pixmap'  : 'Std_Tool1',
+			'MenuText': 'Create Houses',
 			'ToolTip': 'Create House '
 		}
 
@@ -334,7 +334,7 @@ class createHouse:
 class ElevationGrid:
 
 	def Activated(self):
-		print "run import ..."
+		print("run import ...")
 		import geodat.elevationgrid
 		reload(geodat.elevationgrid)
 		geodat.elevationgrid.run()
@@ -343,8 +343,8 @@ class ElevationGrid:
 
 	def GetResources(self):
 		return {
-			'Pixmap'  : 'Std_Tool1', 
-			'MenuText': 'Elevation Grid', 
+			'Pixmap'  : 'Std_Tool1',
+			'MenuText': 'Elevation Grid',
 			'ToolTip': 'create Elevation Grid '
 		}
 
@@ -367,7 +367,7 @@ FreeCADGui.addCommand('Import EMIR', import_emir())
 
 class Geodat ( Workbench ):
 	"Geo data"
-	
+
 	MenuText = "Geo Data"
 	ToolTip = "Openstreetmap data"
 
@@ -375,7 +375,7 @@ class Geodat ( Workbench ):
 		return "Gui::PythonWorkbench"
 
 	def Initialize(self):
-		
+
 		cmds= ["Import OSM Map",'Import CSV','Import GPX',
 			'Import Heights','Import SRTM','Import XYZ','Import LatLonZ','Import Image','Import ASTER','Import LIDAR','Navigator',
 			'Create House','ElevationGrid','Import EMIR']
